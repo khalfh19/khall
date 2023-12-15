@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>khal</title>
+</head>
+<body>
+
+    <!-- Style -->
+
+    <style>
+        /* Font Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: aliceblue;
+}
+
+button{
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    background-color: rgb(154, 154, 252);
+    border: none;
+    padding: 14px 22px;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+}
+
+button.show-modal
+, .modal-event{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .3);
+    pointer-events: none;
+    opacity: 0;
+}
+
+.modal-event{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    z-index: 9999;
+    max-width: 380px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 25px 15px;
+}
+
+.modal-event .title{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.modal-event .text{
+    color: rgb(17, 17, 17);
+    font-size: 14px;
+    text-align: justify;
+    padding-bottom: 20px;
+}
+
+.modal-event .footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-event .footer .next-btn, .prev-btn{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+    background-color: rgb(154, 154, 252);
+    padding: 4px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+}
+    
+
+    </style>
+
+    <!-- Style end -->
+    
+    <!-- Title Start -->
+
+    <section>
+        <div class="modal-event">
+            <div class="title">
+                <h2>Isi</h2>
+            </div>
+            <div class="text">
+                <p>Gw penasaran aja, kenapa tiba-tiba kek ngilang aja gitu. Padahal lagi chat biasa/ngobrol biasa tapi kenapa ngilang aja. Apa emang topiknya gak menarik? atau emang bosen aja?</p>
+                <p style="padding-top: 10px;">Gw penasaran aja dari kemarin, "kenapa ya tiba-tiba ngilang?" ya mungkin 1-2 jam okeh, tapi kalo sampe berjam-jam bahkan berhari-hari?</p>
+                <p style="padding-top: 10px;">Dari lu sendiri sih pasti sibuk, bayangin aja ngerangkap 2 jabatan jadi ketua kelas sama waketu MPK dan gw pasti memaklumi itu.</p>
+            </div>
+            <div class="footer">
+                <a class="prev-btn" href="index.html">Prev</a>
+                <a class="next-btn" href="tutup.html">Next</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Title End -->
+
+<!-- JavaScript start -->
+
+    <script>
+        alert("Disclamer ini bakalan alay, jadi yah.")
+    </script>
+
+<!-- JavaScript end -->
+</body>
+</html>

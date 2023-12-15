@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>khal</title>
+</head>
+<body>
+
+    <!-- Style -->
+
+    <style>
+        /* Font Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: aliceblue;
+}
+
+button{
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    background-color: rgb(154, 154, 252);
+    border: none;
+    padding: 14px 22px;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+}
+
+button.show-modal
+, .modal-event{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .3);
+    pointer-events: none;
+    opacity: 0;
+}
+
+.modal-event{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    z-index: 9999;
+    max-width: 380px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 25px 15px;
+}
+
+.modal-event .title{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.modal-event .text{
+    color: rgb(17, 17, 17);
+    font-size: 14px;
+    text-align: justify;
+    padding-bottom: 20px;
+}
+
+.modal-event .footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-event .footer .next-btn, .prev-btn{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+    background-color: rgb(154, 154, 252);
+    padding: 4px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+}
+    
+
+    </style>
+
+    <!-- Style end -->
+    
+    <!-- Title Start -->
+
+    <section>
+        <div class="modal-event">
+            <div class="title">
+                <h2>Tutup</h2>
+            </div>
+            <div class="text">
+                <p>Jangan dijadiin ini sebagai beban sih, gw ngebuat ini buat ngejadiin media curhat aja. Gw bingung mau curhat kesiapa lagi, jadinya gw memutuskan buat tetep bikin ini.</p>
+                <p style="padding-top: 10px;">Gw tetep nungguin kok, mau lu balesnya kapan gw tetep excited buat ngebalesnya 😆😆.</p>
+                <p style="padding-top: 10px;">Sorry yeah, tiba-tiba bikin beginian. Intinya tetep semangat ya!!</p>
+            </div>
+            <div class="footer">
+                <a class="prev-btn" href="curhat.html">Prev</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Title End -->
+</body>
+</html>
