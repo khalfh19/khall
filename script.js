@@ -1,8 +1,8 @@
-// let person = prompt("Enter your name")
+let person = prompt("Enter your name")
 
-// if (person != null){
-//     alert("Hohohoii! " + person + " welcome to my web")
-// }
+if (person != null){
+    alert("Hohohoii! " + person + " welcome to my web")
+}
 
 
 const section = document.querySelector("section"),

@@ -1,4 +1,16 @@
-/* Font Google */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>khal</title>
+</head>
+<body>
+
+    <!-- Style -->
+
+    <style>
+        /* Font Google */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 * {
@@ -14,21 +26,6 @@ section{
     width: 100%;
     background-color: aliceblue;
 }
-
-section.active .show-modal{
-    display: none;
-}
-
-section.active .modal-event{
-    display: block;
-    pointer-events: auto;
-}
-
-section.active .overlay{
-    opacity: 1;
-    pointer-events: auto;
-}
-
 
 button{
     font-size: 18px;
@@ -62,17 +59,16 @@ button.show-modal
 .modal-event{
     display: flex;
     flex-direction: column;
-    align-items: center;
     background: white;
     z-index: 9999;
     max-width: 380px;
     width: 100%;
     border-radius: 10px;
     padding: 25px 15px;
-    display: none;
 }
 
 .modal-event .title{
+    text-align: center;
     font-size: 18px;
     font-weight: 400;
     padding-bottom: 10px;
@@ -87,9 +83,10 @@ button.show-modal
 
 .modal-event .footer{
     display: flex;
+    justify-content: space-between;
 }
 
-.modal-event .footer .next-btn{
+.modal-event .footer .next-btn, .prev-btn{
     text-decoration: none;
     font-size: 12px;
     font-weight: 400;
@@ -100,4 +97,35 @@ button.show-modal
     cursor: pointer;
     box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
 }
+
+.modal-event .text video{
+    border-radius: 10px;
+}
     
+
+    </style>
+
+    <!-- Style end -->
+    
+    <!-- Title Start -->
+
+    <section>
+        <div class="modal-event">
+            <div class="title">
+                <h2>Why</h2>
+            </div>
+            <div class="text">
+                <p>halo, pasti kaget yeah. Selain ajang pamer, ini juga tempat gw mau curhat sih. Kalau gw curhat di chat itu biasa, jadi gw mau yang gk biasa ya disini.</p>
+                <p style="padding-top: 10px;">Jadi yeah, gw hobi nunggu makanya gw selalu nunggu lu buat bales chat. Kalau gw spam, takut ganggu jadinya ya gw nunggu aja.</p>
+                <p style="padding-top: 10px;">Mungkin gw mau bilang sekali lagi, gw suka sama lu, terserah mau ditanggepin kapan yang pasti gw bakalan selalu nunggu.</p>
+            </div>
+            <div class="footer">
+                <a class="prev-btn" href="curhat.html">Prev</a>
+                <a class="next-btn" href="isi.html">Next</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Title End -->
+</body>
+</html>
